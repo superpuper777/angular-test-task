@@ -1,27 +1,18 @@
-# TestTask
+# Тестовое задание
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.1.
 
-## Development server
+## Требования
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- Страница логина с минимальной валидацией (желательно Reactive Forms).
+- Если нет авторизации, у пользователя не должно быть возможности перейти на домашнюю страницу.
+- После прохождения авторизации переход на домашнюю страницу, где будут отображаться новости.
+- Новости должны браться из файла data.json (эмуляция базы данных и запроса на сервер).
+- Карточка новости (из списка) должна быть представлена отдельным компонентом.
 
-## Code scaffolding
+## Дополнительное задание:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+- Добавить возможность выбора новости из списка в список «Избранные».
+- Список избранных должен отображаться либо на отдельной странице, либо в модальном окне по нажатию на кнопку.
+- Сделать ролевую модель admin и user.
+- При авторизации как admin была возможность удалять новости.
