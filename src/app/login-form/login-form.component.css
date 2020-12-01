@@ -1,0 +1,8 @@
+.login-form-container, .mat-form-field , .mat-form-field {
+  margin: 0 2rem;
+}
+
+.login-form-container{
+  height: 100%;
+}
+
