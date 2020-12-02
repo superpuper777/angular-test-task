@@ -3,6 +3,7 @@
   rel="stylesheet"
 />
 <div class="mat-app-background login-form-container">
+  <h2 class="mat-h2">Login</h2>
   <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
     Value: {{ loginForm.value | json }}
 
@@ -48,6 +49,7 @@
       color="primary"
       [disabled]="loginForm.invalid"
       type="submit"
+      routerLink="/news"
     >
       Login
     </button>

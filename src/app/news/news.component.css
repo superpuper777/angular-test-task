@@ -1,0 +1,15 @@
+.cards-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding-bottom: 2rem;
+}
+.example-card {
+  max-width: 500px;
+}
+.mat-h2{
+ text-align: center;
+}
