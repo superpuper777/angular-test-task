@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
 import { HttpClient } from '@angular/common/http';
+
 import { newItem } from './../newItem';
 
 @Component({
@@ -9,7 +9,6 @@ import { newItem } from './../newItem';
   styleUrls: ['./news.component.css'],
 })
 export class NewsComponent implements OnInit {
-  selectedNewItem: newItem;
   news: any = [];
   constructor(private hC: HttpClient) {
     this.hC.get('assets/data.json').subscribe((data) => {

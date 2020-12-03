@@ -7,9 +7,12 @@
   gap: 2rem;
   padding-bottom: 2rem;
 }
+
 .example-card {
-  max-width: 500px;
+  max-width: 400px;
 }
+
+
 .mat-h2{
- text-align: center;
-}
+  text-align: center;
+ }

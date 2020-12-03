@@ -18,9 +18,10 @@ import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
 
 import { NewsComponent } from './news/news.component';
+import { NewsItemComponent } from './news-item/news-item.component';
 
 @NgModule({
-  declarations: [AppComponent, LoginFormComponent, NewsComponent],
+  declarations: [AppComponent, LoginFormComponent, NewsComponent, NewsItemComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
