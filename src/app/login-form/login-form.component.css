@@ -4,6 +4,9 @@
 
 .login-form-container{
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .mat-h2{

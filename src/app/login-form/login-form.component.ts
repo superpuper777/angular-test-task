@@ -35,7 +35,7 @@ export class LoginFormComponent implements OnInit {
       ],
     });
 
-    this.loginForm.valueChanges.subscribe(console.log);
+    // this.loginForm.valueChanges.subscribe(console.log);
   }
 
   onSubmit() {
