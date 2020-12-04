@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-
+import { AuthService } from '../auth.service';
 import { newItem } from './../newItem';
 
 @Component({
@@ -10,7 +10,7 @@ import { newItem } from './../newItem';
 })
 export class NewsComponent implements OnInit {
   news: any = [];
-  constructor(private hC: HttpClient) {
+  constructor(private hC: HttpClient, private auth: AuthService) {
     this.hC.get('assets/data.json').subscribe((data) => {
       console.log(data);
       this.news = data;
@@ -18,4 +18,8 @@ export class NewsComponent implements OnInit {
   }
 
   ngOnInit(): void {}
+
+  logout() {
+    this.auth.logout();
+  }
 }

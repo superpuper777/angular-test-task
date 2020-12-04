@@ -6,16 +6,21 @@ import {
   Validators,
 } from '@angular/forms';
 
+import { AuthService } from '../auth.service';
+import { User } from '../user';
+
 @Component({
   selector: 'app-login-form',
   templateUrl: './login-form.component.html',
   styleUrls: ['./login-form.component.css'],
 })
 export class LoginFormComponent implements OnInit {
+  user: User;
   loginForm: FormGroup;
+  errorMsg: string = '';
   colorControl = new FormControl('primary');
   hide = true;
-  constructor(private fb: FormBuilder) {}
+  constructor(private fb: FormBuilder, private auth: AuthService) {}
 
   ngOnInit(): void {
     this.loginForm = this.fb.group({
@@ -43,5 +48,11 @@ export class LoginFormComponent implements OnInit {
 
   get password() {
     return this.loginForm.get('password');
+  }
+
+  login() {
+    if (!this.auth.login(this.loginForm.value)) {
+      this.errorMsg = 'Failed to login';
+    }
   }
 }

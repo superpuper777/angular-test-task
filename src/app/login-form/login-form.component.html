@@ -49,7 +49,7 @@
       color="primary"
       [disabled]="loginForm.invalid"
       type="submit"
-      routerLink="/news"
+      (click)="login()"
     >
       Login
     </button>
